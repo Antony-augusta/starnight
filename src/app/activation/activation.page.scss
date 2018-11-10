@@ -1,0 +1,25 @@
+ion-content {    
+    --ion-background-color: var(--ion-color-base);    
+}
+.sc-ion-card-ios-h,
+.sc-ion-card-md-h,
+ion-card-content {
+    --background: var(--ion-color-primary-contrast);
+}
+.sc-ion-card-md-h{
+    margin: 30px 20px;
+}
+h1{
+    font-size: 16px;
+    color: var(--ion-color-primary-contrast);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+p{
+    color: #141414;
+}
+.activation_icon{
+    height: 150px;
+    width: 150px;
+}

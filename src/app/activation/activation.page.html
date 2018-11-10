@@ -1,0 +1,26 @@
+<ion-content padding>
+  <div class="card_sec">
+    <div class="logo">
+      <h1>Rotary club of pondicherry central</h1>
+    </div>
+    <ion-card>
+      <ion-card-content>
+        <p>Verify your number</p>
+        <div class="activation_icon">
+
+        </div>
+        <form (submit)="doLogin()">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating">Mobile number</ion-label>
+              <ion-input type="tel" [(ngModel)]="account.phoneNo" maxlength="10" name="phoneNo"></ion-input>
+            </ion-item>
+            <div padding>
+              <ion-button size="small" color="danger" fill="solid" expand="full" (click)="doLogin()">Get OTP</ion-button>
+            </div>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>  
+</ion-content>

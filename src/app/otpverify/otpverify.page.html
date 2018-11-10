@@ -1,0 +1,30 @@
+
+<ion-content padding>
+<div class="card_sec">
+  <div class="logo">
+    <h1>Rotary club of pondicherry central</h1>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <p>Verify OTP</p>
+      <div class="activation_icon">
+
+      </div>
+      <form (submit)="doVerify()">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Enter one time password</ion-label>
+            <ion-input type="text" [(ngModel)]="account.Token" maxlength="6" name="Token"></ion-input>
+          </ion-item>
+          <div padding>
+            <ion-button size="small" color="primary" fill="solid" expand="full" (click)="doVerify()">Verify</ion-button>
+          </div>
+          <div text-center>
+            <a (click)="Resend()">Resend OTP</a>
+          </div>
+        </ion-list>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  </div>
+</ion-content>

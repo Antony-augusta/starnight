@@ -1,1 +1,26 @@
 
+ion-content {
+    --ion-background-color: var(--ion-color-primary-contrast);
+}
+ion-header {
+    ion-toolbar{
+        --background: var(--ion-color-base);
+        
+        ion-title{
+            color: var(--ion-color-primary-contrast);
+        }
+    }    
+}
+ion-card-header{
+    border-bottom: 1px solid #326bc0;
+    color: #fb3d68;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+p{
+    margin: 0;
+    text-align: justify;
+}
+.home_content{
+    
+}

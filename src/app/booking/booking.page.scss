@@ -1,0 +1,18 @@
+ion-header {
+    ion-toolbar {
+        --background: var(--ion-color-base);
+
+        ion-title {
+            color: var(--ion-color-primary-contrast);
+        }
+    }
+}
+
+ion-grid{
+    background: var(--ion-color-light);
+}
+h2{
+    text-transform: uppercase;
+    color: #fb3d68;
+    font-size: 16px;
+}
