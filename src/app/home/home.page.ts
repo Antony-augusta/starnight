@@ -11,6 +11,7 @@ export class HomePage {
     effect: 'flip',
     slidesPerView: 3
   };
+  eventtime = new Date();
   constructor(private router: Router) { }
   BookNow(){
     this.router.navigateByUrl("/Booking");

@@ -14,7 +14,6 @@ h1{
     color: var(--ion-color-primary-contrast);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 150px;
 }
 p{
     color: #141414;
@@ -22,4 +21,17 @@ p{
 .activation_icon{
     height: 150px;
     width: 150px;
+}
+.logo{
+    text-align: center;
+    padding: 20px 0;
+}
+.activation_icon{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+.activation_icon img {
+    width: auto;
+    display: inline-block;
 }

@@ -11,6 +11,12 @@ ion-header {
         }
     }    
 }
+ion-button{
+    text-transform: none;
+}
+ion-toolbar{
+    --background: var(--ion-color-primary-contrast);
+}
 ion-card-header{
     border-bottom: 1px solid #326bc0;
     color: #fb3d68;
@@ -21,6 +27,14 @@ p{
     margin: 0;
     text-align: justify;
 }
-.home_content{
-    
+.eventtime{
+    float: right;
+    font-size: 12px;
+}
+.sponsors_txt{
+    position: absolute;
+    top: -8px;
+    right: 50%;
+    margin-right: -50px;
+    z-index: 99;
 }

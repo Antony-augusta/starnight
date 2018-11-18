@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Home
+    <ion-title text-center>
+      <img src="../../assets/images/main_logo.png" alt="logo">
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,62 +15,56 @@
 
     <ion-card-header>
       START NIGHT EVENT
+      <div class="eventtime">
+        {{eventtime | date: 'mediumDate'}}
+      </div>
     </ion-card-header>
 
     <ion-card-content>
       <div class="home_content">
-        <ion-slides pager="true">
+        <ion-slides pager="false" [options]="slideOpts">
           <ion-slide>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-              essentially unchanged. </p>
+            <img src="../../assets/images/img1.png" alt="image">
           </ion-slide>
           <ion-slide>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-              essentially unchanged. </p>
+            <img src="../../assets/images/img2.png" alt="image">
           </ion-slide>
           <ion-slide>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-              essentially unchanged. </p>
+            <img src="../../assets/images/img3.png" alt="image">
           </ion-slide>
           <ion-slide>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-              essentially unchanged. </p>
+            
           </ion-slide>
         </ion-slides>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took. </p>
       </div>
     </ion-card-content>
   </ion-card>
   <ion-grid>
     <ion-row>
       <ion-col col-12>
-        <ion-button size="small" color="pink" expand="full" fill="solid" (click)="BookNow()">Book Event</ion-button>
+        <ion-button color="secondary" expand="full" fill="solid" (click)="BookNow()">Book Event</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-slides pager="true" [options]="slideOpts">
+  <p class="sponsors_txt">Event Sponsors</p>
+  <ion-toolbar>    
+    <ion-slides pager="false" [options]="slideOpts">
       <ion-slide>
-        <h1>Slide 1</h1>
+        <img src="../../assets/images/1.png" />
       </ion-slide>
       <ion-slide>
-        <h1>Slide 2</h1>
+        <img src="../../assets/images/2.png" />
       </ion-slide>
       <ion-slide>
-        <h1>Slide 3</h1>
+        <img src="../../assets/images/3.png" />
       </ion-slide>
       <ion-slide>
-        <h1>Slide 4</h1>
+        <img src="../../assets/images/4.png" />
       </ion-slide>
     </ion-slides>
   </ion-toolbar>
